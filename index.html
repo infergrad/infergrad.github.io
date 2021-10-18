@@ -2,7 +2,7 @@
 <!-- saved from url=(0041)https://yaden2018.github.io/multispeaker/ -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
-    <title>INFERGRAD: IMPROVING DIFFUSION MODELS FOR VOCODER BY CONSIDERING INFERENCE IN TRAINING
+    <title>InferGrad: Improving Diffusion Models For Vocoder By Considering Inference In Training
 </title>
     <link rel="shortcut icon" href="https://vancycici.github.io/fbdecode/img/ms.jpg">
     <link rel="icon" href="https://vancycici.github.io/fbdecode/img/ms.jpg">
@@ -23,24 +23,31 @@
 
 <article>
     <header>
-        <h1>INFERGRAD: IMPROVING DIFFUSION MODELS FOR VOCODER BY CONSIDERING INFERENCE IN TRAINING</h1>
+        <h1>InferGrad: Improving Diffusion Models For Vocoder By Considering Inference In Training</h1>
     </header>
 </article> 
 <div><b>Authors:</b> Zehua Chen, Xu Tan, Ke Wang, Shifeng Pan, Danilo Mandic, Lei He, Sheng Zhao</a> (Submitted to ICASSP 2022</a>)</div>
-<div><b>Note:</b> Audio samples are generated with the searched optimal schedule for WaveGrad instead of InferGrad, in order to maximize the baseline model performance. Exhibited samples below are randomly chosen as LJ001-0001, LJ001-0024, LJ001-0080 respectively.</a> </div>
+<div><b>Note:</b> Audio samples are generated with the searched optimal schedule of WaveGrad instead of InferGrad, in order to maximize the baseline model performance. Three audio samples LJ001-0001, LJ001-0002, LJ001-0003 are exhibited below.</a> </div>
 
 </div>
     <h3>6-step generation</h3>
 	
 		“Printing, in the only sense with which we are at present concerned, differs from most if not from all the arts and crafts represented in the Exhibition”
         <table><tbody><tr>
-            <td>WaveGrad Baseline:</td>
+            <td>Ground Truth:</td>
+            <td>
+                <audio controls="">
+                    <source src="wav/LJ001-0001.wav">
+                </audio>
+            </td>
+            <td></td>
+			<td>WaveGrad Baseline:</td>
             <td>
                 <audio controls="">
                     <source src="wav/6-LJ0010001-WG-Baseline.wav">
                 </audio>
             </td>
-            <td></td>
+			<td></td>
             <td>InferGrad General Model:</td>
             <td>
                 <audio controls="">
@@ -57,52 +64,66 @@
         </tr>
     </tbody></table>
     
-        “But the first Bible actually dated (which also was printed at Maintz by Peter Schoeffer in the year fourteen sixty-two)”
+        “in being comparatively modern.”
         <table><tbody><tr>
-            <td>WaveGrad Baseline:</td>
+			<td>Ground Truth:</td>
             <td>
                 <audio controls="">
-                    <source src="wav/6-LJ0010024-WG-Baseline.wav">
+                    <source src="wav/LJ001-0002.wav">
                 </audio>
             </td>
             <td></td>
+            <td>WaveGrad Baseline:</td>
+            <td>
+                <audio controls="">
+                    <source src="wav/6-LJ0010002-WG-Baseline.wav">
+                </audio>
+            </td>
+			<td></td>
             <td>InferGrad General Model:</td>
             <td>
                 <audio controls="">
-                    <source src="wav/6-LJ0010024-IG-General.wav">
+                    <source src="wav/6-LJ0010002-IG-General.wav">
                 </audio>
             </td>
             <td></td>
             <td>InferGrad Specified Model:</td>
             <td>
                 <audio controls="">
-                    <source src="wav/6-LJ0010024-IG-Specified.wav">
+                    <source src="wav/6-LJ0010002-IG-Specified.wav">
                 </audio>
             </td>
         </tr>
     </tbody></table>
 
 	
-		“he seems to have taken the letter of the Elzevirs of the seventeenth century for his model:”
+		“For although the Chinese took impressions from wood blocks engraved in relief for centuries before the woodcutters of the Netherlands, by a similar process”
         <table><tbody><tr>
-            <td>WaveGrad Baseline:</td>
+			<td>Ground Truth:</td>
             <td>
                 <audio controls="">
-                    <source src="wav/6-LJ0010080-WG-Baseline.wav">
+                    <source src="wav/LJ001-0003.wav">
                 </audio>
             </td>
             <td></td>
+            <td>WaveGrad Baseline:</td>
+            <td>
+                <audio controls="">
+                    <source src="wav/6-LJ0010003-WG-Baseline.wav">
+                </audio>
+            </td>
+			<td></td>
             <td>InferGrad General Model:</td>
             <td>
                 <audio controls="">
-                    <source src="wav/6-LJ0010080-IG-General.wav">
+                    <source src="wav/6-LJ0010003-IG-General.wav">
                 </audio>
             </td>
             <td></td>
             <td>InferGrad Specified Model:</td>
             <td>
                 <audio controls="">
-                    <source src="wav/6-LJ0010080-IG-Specified.wav">
+                    <source src="wav/6-LJ0010003-IG-Specified.wav">
                 </audio>
             </td>
         </tr>
@@ -113,13 +134,20 @@
 	
 		“Printing, in the only sense with which we are at present concerned, differs from most if not from all the arts and crafts represented in the Exhibition”
         <table><tbody><tr>
-            <td>WaveGrad Baseline:</td>
+            <td>Ground Truth:</td>
+            <td>
+                <audio controls="">
+                    <source src="wav/LJ001-0001.wav">
+                </audio>
+            </td>
+            <td></td>
+			<td>WaveGrad Baseline:</td>
             <td>
                 <audio controls="">
                     <source src="wav/3-LJ0010001-WG-Baseline.wav">
                 </audio>
             </td>
-            <td></td>
+			<td></td>
             <td>InferGrad General Model:</td>
             <td>
                 <audio controls="">
@@ -136,71 +164,90 @@
         </tr>
     </tbody></table>
     
-        “But the first Bible actually dated (which also was printed at Maintz by Peter Schoeffer in the year fourteen sixty-two)”
+        “in being comparatively modern.”
         <table><tbody><tr>
-            <td>WaveGrad Baseline:</td>
+			<td>Ground Truth:</td>
             <td>
                 <audio controls="">
-                    <source src="wav/3-LJ0010024-WG-Baseline.wav">
+                    <source src="wav/LJ001-0002.wav">
                 </audio>
             </td>
             <td></td>
+            <td>WaveGrad Baseline:</td>
+            <td>
+                <audio controls="">
+                    <source src="wav/3-LJ0010002-WG-Baseline.wav">
+                </audio>
+            </td>
+			<td></td>
             <td>InferGrad General Model:</td>
             <td>
                 <audio controls="">
-                    <source src="wav/3-LJ0010024-IG-General.wav">
+                    <source src="wav/3-LJ0010002-IG-General.wav">
                 </audio>
             </td>
             <td></td>
             <td>InferGrad Specified Model:</td>
             <td>
                 <audio controls="">
-                    <source src="wav/3-LJ0010024-IG-Specified.wav">
+                    <source src="wav/3-LJ0010002-IG-Specified.wav">
                 </audio>
             </td>
         </tr>
     </tbody></table>
 
 	
-		“he seems to have taken the letter of the Elzevirs of the seventeenth century for his model:”
+		“For although the Chinese took impressions from wood blocks engraved in relief for centuries before the woodcutters of the Netherlands, by a similar process”
         <table><tbody><tr>
-            <td>WaveGrad Baseline:</td>
+			<td>Ground Truth:</td>
             <td>
                 <audio controls="">
-                    <source src="wav/3-LJ0010080-WG-Baseline.wav">
+                    <source src="wav/LJ001-0003.wav">
                 </audio>
             </td>
             <td></td>
+            <td>WaveGrad Baseline:</td>
+            <td>
+                <audio controls="">
+                    <source src="wav/3-LJ0010003-WG-Baseline.wav">
+                </audio>
+            </td>
+			<td></td>
             <td>InferGrad General Model:</td>
             <td>
                 <audio controls="">
-                    <source src="wav/3-LJ0010080-IG-General.wav">
+                    <source src="wav/3-LJ0010003-IG-General.wav">
                 </audio>
             </td>
             <td></td>
             <td>InferGrad Specified Model:</td>
             <td>
                 <audio controls="">
-                    <source src="wav/3-LJ0010080-IG-Specified.wav">
+                    <source src="wav/3-LJ0010003-IG-Specified.wav">
                 </audio>
             </td>
         </tr>
     </tbody></table>
 
 </div>
-
-
-	<h3>2-step generation</h3>
+    <h3>2-step generation</h3>
 	
 		“Printing, in the only sense with which we are at present concerned, differs from most if not from all the arts and crafts represented in the Exhibition”
         <table><tbody><tr>
-            <td>WaveGrad Baseline:</td>
+            <td>Ground Truth:</td>
+            <td>
+                <audio controls="">
+                    <source src="wav/LJ001-0001.wav">
+                </audio>
+            </td>
+            <td></td>
+			<td>WaveGrad Baseline:</td>
             <td>
                 <audio controls="">
                     <source src="wav/2-LJ0010001-WG-Baseline.wav">
                 </audio>
             </td>
-            <td></td>
+			<td></td>
             <td>InferGrad General Model:</td>
             <td>
                 <audio controls="">
@@ -217,59 +264,73 @@
         </tr>
     </tbody></table>
     
-        “But the first Bible actually dated (which also was printed at Maintz by Peter Schoeffer in the year fourteen sixty-two)”
+        “in being comparatively modern.”
         <table><tbody><tr>
-            <td>WaveGrad Baseline:</td>
+			<td>Ground Truth:</td>
             <td>
                 <audio controls="">
-                    <source src="wav/2-LJ0010024-WG-Baseline.wav">
+                    <source src="wav/LJ001-0002.wav">
                 </audio>
             </td>
             <td></td>
+            <td>WaveGrad Baseline:</td>
+            <td>
+                <audio controls="">
+                    <source src="wav/2-LJ0010002-WG-Baseline.wav">
+                </audio>
+            </td>
+			<td></td>
             <td>InferGrad General Model:</td>
             <td>
                 <audio controls="">
-                    <source src="wav/2-LJ0010024-IG-General.wav">
+                    <source src="wav/2-LJ0010002-IG-General.wav">
                 </audio>
             </td>
             <td></td>
             <td>InferGrad Specified Model:</td>
             <td>
                 <audio controls="">
-                    <source src="wav/2-LJ0010024-IG-Specified.wav">
+                    <source src="wav/2-LJ0010002-IG-Specified.wav">
                 </audio>
             </td>
         </tr>
     </tbody></table>
-    
 
-		“he seems to have taken the letter of the Elzevirs of the seventeenth century for his model:”
+	
+		“For although the Chinese took impressions from wood blocks engraved in relief for centuries before the woodcutters of the Netherlands, by a similar process”
         <table><tbody><tr>
-            <td>WaveGrad Baseline:</td>
+			<td>Ground Truth:</td>
             <td>
                 <audio controls="">
-                    <source src="wav/2-LJ0010080-WG-Baseline.wav">
+                    <source src="wav/LJ001-0003.wav">
                 </audio>
             </td>
             <td></td>
+            <td>WaveGrad Baseline:</td>
+            <td>
+                <audio controls="">
+                    <source src="wav/2-LJ0010003-WG-Baseline.wav">
+                </audio>
+            </td>
+			<td></td>
             <td>InferGrad General Model:</td>
             <td>
                 <audio controls="">
-                    <source src="wav/2-LJ0010080-IG-General.wav">
+                    <source src="wav/2-LJ0010003-IG-General.wav">
                 </audio>
             </td>
             <td></td>
             <td>InferGrad Specified Model:</td>
             <td>
                 <audio controls="">
-                    <source src="wav/2-LJ0010080-IG-Specified.wav">
+                    <source src="wav/2-LJ0010003-IG-Specified.wav">
                 </audio>
             </td>
         </tr>
     </tbody></table>
 
 	<div>
-    <h3>Ablation study for inferGrad in 2-step generation</h3>
+    <h3>Ablation study for InferGrad in 2-step generation</h3>
 	
 		“Printing, in the only sense with which we are at present concerned, differs from most if not from all the arts and crafts represented in the Exhibition”
         <table><tbody><tr>
@@ -289,38 +350,38 @@
         </tr>
     </tbody></table>
     
-        “But the first Bible actually dated (which also was printed at Maintz by Peter Schoeffer in the year fourteen sixty-two)”
+        “in being comparatively modern.”
         <table><tbody><tr>
             <td>InferGrad Without Phase Loss:</td>
             <td>
                 <audio controls="">
-                    <source src="wav/2-LJ0010024-IG-SpecifiedNoPhase.wav">
+                    <source src="wav/2-LJ0010002-IG-SpecifiedNoPhase.wav">
                 </audio>
 			</td>
             <td></td>
             <td>InferGrad Specified Model:</td>
             <td>
                 <audio controls="">
-                    <source src="wav/2-LJ0010024-IG-Specified.wav">
+                    <source src="wav/2-LJ0010002-IG-Specified.wav">
                 </audio>
             </td>
         </tr>
     </tbody></table>
     
 
-		“he seems to have taken the letter of the Elzevirs of the seventeenth century for his model:”
+		“For although the Chinese took impressions from wood blocks engraved in relief for centuries before the woodcutters of the Netherlands, by a similar process”
         <table><tbody><tr>
             <td>InferGrad Without Phase Loss:</td>
             <td>
                 <audio controls="">
-                    <source src="wav/2-LJ0010080-IG-SpecifiedNoPhase.wav">
+                    <source src="wav/2-LJ0010003-IG-SpecifiedNoPhase.wav">
                 </audio>
 			</td>
             <td></td>
             <td>InferGrad Specified Model:</td>
             <td>
                 <audio controls="">
-                    <source src="wav/2-LJ0010080-IG-Specified.wav">
+                    <source src="wav/2-LJ0010003-IG-Specified.wav">
                 </audio>
             </td>
         </tr>
